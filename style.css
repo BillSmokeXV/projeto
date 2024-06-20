@@ -32,7 +32,7 @@ body {
   */
 
   background: var(--bg-url) no-repeat top center/cover;
-
+  height: 100vh;
   /*esse atalho acima é maravilhoso*/
 }
 
@@ -52,10 +52,11 @@ body * {
   text-align: center;
   padding: 24px;
 }
+
 #profile img {
   width: 112px;
-  margin: auto;
 }
+
 #profile p {
   font-weight: 500;
   line-height: 24px;
@@ -174,6 +175,12 @@ footer {
 /*media queries */
 
 @media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg)
+  }
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg)
+  }
 }
 
 /*animation */
